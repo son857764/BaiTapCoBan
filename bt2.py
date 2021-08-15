@@ -5,9 +5,8 @@
 
 n = int(input("Số cần tính giai thừa n = "))
 def fact():
-    if n == 0:
+    if n == 0 or n == 1:
         return 1
     return n * ( n - 1 )
 
 print("Giai thừa của",n,"là:" ,fact())
-        
