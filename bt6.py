@@ -1,7 +1,7 @@
 import re
 ########### in kết quả ra 1 chuỗi:Hàm số re.sub() ,re.search()
 s1 = '1ab23cdef456'
-m1 = re.sub(r'\D','', s1)
+m1 = re.sub(r'\D','', s1) 
 print(m1)
 #>> 123456
 
