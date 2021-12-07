@@ -1,0 +1,18 @@
+import os
+path = os.getcwd()
+f = open('myfile.txt', 'r', encoding='UTF-8')
+with open(rf'{path}\data.txt', 'r', encoding='UTF-8') as f:
+
+    data = f.read().strip().split("\n")                   # ĐỌC THànH CHUỗi > split thÀNh lISt 
+    
+    
+# đọc toàn bộ file dưới dạng list 
+with open('myfile.txt', 'r') as f:
+    datalist = f.readlines() 
+    print(datalist)
+#>> ['Hello World\n', 'How are you\n', 'What time is it']
+    
+# đọc toàn bộ file dưới dạng list ko bao gồm kí tự xuống dòng "\n"
+with open('myfile.txt', 'r') as f:
+    l_strip = [s.strip() for s in f.readlines()]
+    print(l_strip)
